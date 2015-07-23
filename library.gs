@@ -10,7 +10,6 @@ function newLog(){
 var priorityLog_ = function(){
   var self_ = this,
       destination_ = function(){},
-      levels_ = {},
       priority_;
   
   self_.setService = function(destinationFunction){destination_ = destinationFunction; return self_;};
