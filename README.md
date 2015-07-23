@@ -29,7 +29,7 @@ or add the code from library.gs
     log.addPriority("critical",2);  //You could do an addPriority("Power",9001);
   
 ##### Set your logging threshold  
-`setPriority()` lets you set the threshold you want to log at. In this example we have three tiers of logging: normal:0, high:1, critical:3.  If I wanted to log all levels I would set the priority at 0.  That means all priorities at 0 and above will be logged.  If I only want to see critical logs I would set the priority to 2.  
+`setPriority()` lets you set the threshold you want to log at. In this example we have three tiers of logging: normal:0, high:1, critical:2.  If I wanted to log all levels I would set the priority at 0.  That means all priorities at 0 and above will be logged.  If I only want to see critical logs I would set the priority to 2.  
    
     log.setPriority(0); // record all priority levels to logs  
   
