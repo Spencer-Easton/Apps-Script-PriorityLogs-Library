@@ -34,15 +34,15 @@ function logToDocument(){
   
   var log = PriorityLogs.newLog()
   .setService(DocLog)
-  .addPriority("normal",0)
-  .addPriority("high",1)
-  .addPriority("critical",2)
+  .addPriority("small",0)
+  .addPriority("medium",5)
+  .addPriority("large",10)
   .setPriority(0);
   
   
-  log.normal("test {priority}");
-  log.high("test {priority}");
-  log.critical("test {priority}");
+  log.small("test {priority}");
+  log.medium("test {priority}");
+  log.large("test {priority}");
   
 }
 
@@ -60,14 +60,14 @@ function logToSpreadsheet(){
   
   var log = PriorityLogs.newLog()
   .setService(SheetLog)
-  .addPriority("normal",0)
-  .addPriority("high",1)
-  .addPriority("critical",2)
+  .addPriority("boring",0)
+  .addPriority("average",10)
+  .addPriority("exciting",20)
   .setPriority(0);
   
   
-  log.normal("test {priority}");
-  log.high("test {priority}");
-  log.critical("test {priority}");
+  log.boring("test {priority}");
+  log.average("test {priority}");
+  log.exciting("test {priority}");
   
 }
